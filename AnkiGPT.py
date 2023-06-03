@@ -4,8 +4,7 @@ import openai
 import os
 import base64
 
-OPENAI_API_KEY = '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'
-openai.api_key = OPENAI_API_KEY
+openai.api_key = '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'
 
 def extract_text_from_pdf(file):
     pdf_reader = PyPDF2.PdfReader(file)
@@ -50,11 +49,11 @@ def get_file_download_link(text_file, filename):
     b64 = base64.b64encode(text_file.encode()).decode()
     return f'<a href="data:file/txt;base64,{b64}" download="{filename}">Download Flashcards</a>'
 
-st.title('GPTAnki Flashcard Generator (Based on GPT 3.5)')
+st.title('Anki Flashcard Generator')
 
 uploaded_file = st.file_uploader('Please upload your PDF file', type='pdf')
 
-chunk_size = st.number_input('Enter the chunk size (default is 1000)', min_value=1, value=1000, step=100)
+chunk_size = st.number_input('Enter the chunk size (default is 1000)', min_value=1, value=1000, step=1)
 
 if st.button('Generate Flashcards'):
     if uploaded_file is not None:
