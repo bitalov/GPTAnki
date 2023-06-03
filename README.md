@@ -68,7 +68,7 @@ pip install -r requirements.txt
 5. Set the "Start command" to:
 
 ```bash
-streamlit run app.py
+streamlit run AnkiGPT.py
 ```
 
 6. Click on the "Create Web Service" button to deploy the application.
