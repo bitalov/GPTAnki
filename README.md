@@ -1,6 +1,6 @@
 # GPTAnki
 
-GPTAnki is a simple web application that uses OpenAI's GPT-3 or GPT-4 to generate Anki flashcards from a given PDF file. The application uses Streamlit for the frontend and PyPDF2 for PDF text extraction.
+GPTAnki is a simple web application that uses OpenAI's GPT-3.5 or GPT-4 to generate Anki flashcards from a given PDF file. The application uses Streamlit for the frontend and PyPDF2 for PDF text extraction.
 
 ## Table of Contents
 - [Requirements](#requirements)
