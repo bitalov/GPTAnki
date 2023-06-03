@@ -47,7 +47,7 @@ pip install -r requirements.txt
 4. Run the Streamlit app:
 
 ```bash
-streamlit run app.py
+streamlit run AnkiGPT.py
 ```
 
 The application should now be running on your local machine at `http://localhost:8501/`.
